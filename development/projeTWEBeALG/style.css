@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --gray--: #F9F9F9;
+    --blue--: #D0EAFF;
+
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+
+.navBar {
+    padding: 0px 50px;
+    background: var(--gray--);
+    display: flex;
+    justify-content: space-between;
+}
+
+.pfpDiv {
+    display: flex;
+    align-items: center;
+}
+
+.pfpDiv>h2 {
+    font-weight: 400 !important;
+}
+
+.pfp {
+    width: 50px;
+    clip-path: circle();
+}
+
+.allCards {
+    display: flex;
+    margin: 80px 40px;
+    width: 100% - 160px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    padding: 30px;
+    background: var(--gray--);
+    width: 90%;
+    margin: 40px;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+
+.lang {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.langSpecific {
+    background: var(--blue--);
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.allLang {
+    display: flex;
+    align-items: center;
+}
+
+.textTranslate {
+    font-weight: 500;
+    font-size: 24px;
+    height: 220px;
+}
+
+.change {
+    background: var(--blue--);
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 375px;
+    width: 120px;
+    height: 65px;
+}
+
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--gray--);
+    min-width: 112px;
+    max-width: 112px;
+    padding: 0px 10px;
+    padding-left: 20px;
+    z-index: 1;
+}
+
+.dropdown-content:hover:nth-child() {
+    background-color: var(--blue--);
+    /* vai tudo de uma vez e nao indv. */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.options {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.modalClose {
+    /* cor rgba ,tamn n visivel, mouse n clica opacidade 35 */
+}
+
+.modalClose .modalOpen {}
+
+/* display block . pointer event auto */

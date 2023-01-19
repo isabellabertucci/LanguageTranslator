@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/4ea6e3ab0b.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css" class="css">
+  <title>Translator ESMAD</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row d-sm-none d-md-block ">
+      <a class=" p-3 col-12 d-flex justify-content-between align-items-center bg-primary">
+
+        <h1 class="ml-5 text-light">Translator</h1>
+
+        <img class="mr-5" style="scale: 2.2; clip-path: circle();"
+          src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          width="30" height="24" class="d-inline-block align--top">
+      </a>
+    </div>
+
+
+
+    <!-- translations -->
+    <div class="row justify-content-center mb-sm-4 mt-sm-5">
+
+
+      <div class="col-lg-5 col-sm-12 rounded bg-light mr-lg-5 p-4">
+        <textarea class="col-lg-12 from-area" placeholder="start writing" name="mainLang" id="mainLang"
+          style="resize: none; border: none;height: 26vh;"></textarea>
+
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+        <!-- dropdown -->
+
+        <div class="dropdown">
+          <button class=" bg-primary btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Main Lang
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-item">Português</li>
+            <li class="dropdown-item">Português (br)</li>
+            <li class="dropdown-item">Finlandês</li>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-1 col-sm-12 justify-content-center align-self-center" style="padding: 0 0;">
+        <button type="button" class="btn btn-primary exchange"><i
+            class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+
+
+
+      <div class="col-lg-5 col-sm-12 rounded bg-light p-4 mt-lg-0 mt-sm-5">
+        <textarea disabled class="col-lg-12 to-area" name="mainLang" id="mainLang"
+          style="resize: none; border: none;height: 26vh"></textarea>
+
+
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+
+        <!-- dropdown -->
+
+        <div class="dropdown">
+          <button class=" bg-primary btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Foreign Lang
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-item">English</li>
+            <li class="dropdown-item">English (uk)</li>
+            <li class="dropdown-item">French</li>
+          </div>
+        </div>
+      </div>
+
+      <!-- <button class="exchange">exchenge</button> -->
+    </div>
+
+    <!-- translate btn -->
+
+    <div class="row justify-content-center mt-5 button">
+      <button style="height: 60px;" type="button"
+        class="btn btn-primary btn-lg btn-block col-4 font-weight-bold text-uppercase">Translate</button>
+    </div>
+  </div>
+
+
+  <!-- menu Mobile -->
+
+  <div class="row">
+    <div class="bg-primary p-4 d-flex justify-content-between align-items-center col-lg-12 d-md-none fixed-bottom"
+      style="height: 85px;">
+      <h3 class="text-light">Translator</h3>
+      <img class="mr-5" style="scale: 2.2; clip-path: circle();"
+        src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        width="30" height="24" class="d-inline-block align--top">
+
+    </div>
+  </div>
+
+  </div>
+
+  <select name="" id=""></select>
+  <select name="" id=""></select>
+
+  <script src="/Tradutor/js/countries.js"></script>
+  <script src="/Tradutor/js/tradutor.js"></script>
+
+
+</body>
+
+</html>

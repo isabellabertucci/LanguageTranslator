@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/4ea6e3ab0b.js" crossorigin="anonymous"></script>
+
+<body class="bg-light ">
+
+    <section class="container">
+        <div class="row content d-flex justify-content-center align-content-center" style="height: 100vh;">
+            <div class=" col-xl-5 col-lg-6 col-md-8 col-sm-10">
+                <div class="box shadow bg-white p-4">
+                    <h3 class="text-center md-4 fs-1 fw-bold text-primary" style="margin: 20px;">Create Account</h3>
+
+                    <form class="mb-3 needs-validation" method="POST" action="/register" novalidate>
+
+
+                        <!-- Input name -->
+                        <div class="form-floating mb-3" style="margin-top: 20px;">
+                            <input type="text" class="form-control" id="createName" placeholder="name" required>
+                            <label for="createName" class="form-label">Name</label>
+                        </div>
+
+                        <!-- Input email -->
+                        <div class="form-floating mb-3" style="margin-top: 20px;">
+                            <input type="email" class="form-control " id="createEmail" placeholder="email">
+                            <label for="createEmail" class="form-label">Email address</label>
+                        </div>
+
+                        <!-- Input user role -->
+                        <div class="input-group mb-3">
+                            <select class="form-select" id="userRole">
+                                <option selected>User role</option>
+                                <option value="Student">Student</option>
+                                <option value="Teacher">Teacher</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                        </div>
+
+                        <!-- Input password -->
+                        <div class="form-floating mb-3" style="margin-top: 20px;">
+                            <input type="password" class="form-control " id="createPassword" placeholder="password"
+                                autocomplete="on">
+                            <label for="createPassword" class="form-label">Password</label>
+                        </div>
+
+
+                        <!-- Input confirm password -->
+                        <div class="form-floating mb-3" style="margin-top: 20px;">
+                            <input type="password" class="form-control " id="confrimPassword" placeholder="password"
+                                autocomplete="on">
+                            <label for="confrimPassword" class="form-label">Confrim Password</label>
+                        </div>
+
+                        <div class="d-grid gap-2 mb-3">
+                            <button type="button" class="btn btn-primary btn-lg" onclick="CreateAccount()"> Create
+                                account</button>
+                        </div>
+                    </form>
+
+                    <div class="sign-up-account">
+                        <p class="fw-normal text-center">If you alredy have an account <a href="/Login/login.html"
+                                class="text-decoration-none fw-bold">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="/Login/js/login.js"></script>
+</body>
+
+</html>
